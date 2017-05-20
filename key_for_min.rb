@@ -11,8 +11,7 @@ def key_for_min_value(name_hash)
 # return the variable minValueKey
   minValues = Array.new
   minValues << name_hash.collect  {|key, value| value}
-  minValues = minValues.flatten
-  minValues = minValues.sort
+  minValues = minValues.flatten.sort
   minValue = minValues[0]
   minValueKey = nil
   name_hash.each { |key, value|
